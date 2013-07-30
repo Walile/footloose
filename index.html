@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
+	<script src="lib/cal.js"></script>
+	<script src="lib/lang.js"></script>
+</head>
+<body>
+	<h1>計算需要多少時間才能達到理想的體脂率</h1>
+	<!-- <form name="calForm"> -->
+		<label for="weight">目前體重：</label>
+			<input type="text" name="nowWeight" id="nowWeight" value=""/>
+
+		<label for="fatRate">目前體脂率：</label>
+			<input type="text" name="nowFatRate" id="nowFatRate" value="" maxleng="2" size="2" />%
+		<label for="decreaseFatRate">希望減到剩多少體脂率：</label>
+			<input type="text" name="decreaseFatRate" id="decreaseFatRate" value="" maxleng="2" size="2" />%
+		<label for="calories">希望每天可以多消耗幾大卡：</label>
+			<input type="text" name="calories" id="calories" value="" maxleng="2" size="2" />
+		<button type="buttom" id="cal">計算</button>
+	<!-- </form> -->
+	<section id="result">
+	
+	</section>
+</body>
+</html>
