@@ -9,7 +9,7 @@ You meight to know about your real weight and fat rate.
 
 This app just a provide some information that need for calculation. Didn't mean that you will be loose weight If you didn't do the right way for healthy. 
 
-Every healthy way for loosing weight/fatness that meight be ask for doctor or personal training.
+Every healthy way for loosing weight/fatness that meight be ask for doctor or personal trainer.
 
 footloose - 這個app仍在建置中
 ========
