@@ -1,27 +1,69 @@
 <html>
 <head>
-	<title></title>
+	<title>footloose - calculate your healthy</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
 	<script src="lib/cal.js"></script>
 	<script src="lib/lang.js"></script>
 </head>
 <body>
-	<h1>計算需要多少時間才能達到理想的體脂率</h1>
-	<!-- <form name="calForm"> -->
-		<label for="weight">目前體重：</label>
-			<input type="text" name="nowWeight" id="nowWeight" value=""/>
+	<div id="header">
+		<a href="#index" class="nav-button">首頁</a>
+		<a href="#howtouse" class="nav-button">使用說明</a>
+		<a href="#calculate" class="nav-button">計算時間</a>
+		<a href="#dev" class="nav-button">開發說明</a>
+	</div>
+	<div class="slide" id="index">
+		<h4>footloose - Calculate your healthy</h4>
+		<p>功用：達到自己的目標體脂率時，最快需要多少時間</p>
+	</div>
+	<div class="slide" id="howtouse">
+		<div class="help">
+		<p>1. 請先量過體脂計後，確認自己目前的體重以及體脂率。</p>
+		<p>2. 每人每天能多消耗的卡路里其實不多。(計算可用一根香蕉200大卡簡單換算)</p>
+		<p>3. 這個是提醒自己如果吃胖了，要多努力才減的下來....</p>
 
-		<label for="fatRate">目前體脂率：</label>
-			<input type="text" name="nowFatRate" id="nowFatRate" value="" maxleng="2" size="2" />%
-		<label for="decreaseFatRate">希望減到剩多少體脂率：</label>
-			<input type="text" name="decreaseFatRate" id="decreaseFatRate" value="" maxleng="2" size="2" />%
-		<label for="calories">希望每天可以多消耗幾大卡：</label>
-			<input type="text" name="calories" id="calories" value="" maxleng="2" size="2" />
-		<button type="buttom" id="cal">計算</button>
-	<!-- </form> -->
-	<section id="result">
+		<p><em>注意：</em></p>
+			<p>所有減重的行為的前提都需要在不影響健康的狀況下進行。這個app只是提供相關資訊計算上的服務。希望大家一起來減肥。(所以作者很胖)</p>
+
+			<p>每個人減肥的方式都不同，造成肥胖的原因也不同。有需要咨詢的部分，請詢問您的醫師或是私人教練。他們會給與專業的建議。<p>
+		</p>
+		</div>
+	</div>
+	<div class="slide" id="calculate">
+		<h6>計算需要多少時間才能達到理想的體脂率</h6>
+		<table>
+			<tr>
+				<th>目前體重：</th>
+				<td><input type="text" name="nowWeight" id="nowWeight" value=""/></td>
+			</tr>
+			<tr>
+				<th>目前體脂率：</th>
+				<td><input type="text" name="nowFatRate" id="nowFatRate" value="" maxleng="2" size="2" />%</td>
+			</tr>
+			<tr>
+				<th>希望減到剩多少體脂率：</th>
+				<td><input type="text" name="decreaseFatRate" id="decreaseFatRate" value="" maxleng="2" size="2" />%</td>
+			</tr>
+			<tr>
+				<th>希望每天可以多消耗幾大卡：</th>
+				<td><input type="text" name="calories" id="calories" value="" maxleng="2" size="2" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="buttom_left"><button type="buttom" id="cal">計算</button></td>
+			</tr>
+			<tr>
+				<th>結果說明：</th>
+				<td id="result"></td>
+			</tr>
+		</table>
 	
-	</section>
+	</div>
+	<div class="slide" id="dev">
+		開發：<a href="http://blog.walile.info">@walile</a>
+	</div>
+
 </body>
 </html>
